@@ -19,17 +19,19 @@
 :root{
   --cocacola: #F40009;       
   --fondo: #230101;      
-  --verde: #00d4a4;     
+  --verde: #00d4a4;  
+  --verdeoscuro:#00382b;   
   --texto: #fff; 
+  --azulon: #4602a0;
 }
 div{
-  background-color: var(--texto);
+  /* background: linear-gradient(var(--cocacola, --fondo)); */
   width: 350px;
   margin: auto;
 }
 header h1{
   background-color: var(--fondo);
-  text-align: left;
+  text-align: center;
   padding: 30px 5px;
   margin: auto;
   font-size: 50px;
@@ -45,21 +47,27 @@ header h2{
   /* font-family: "Barrio", system-ui; */
 }
 #h3Header{
-  padding: 0px 5px;
+  padding: 2px 5px;
   display: block;
   font-size: 18px;
-  font-weight: 300;
+  font-weight: 400;
   text-align: center;
 }
 header h2,
 header h3{
+  color: var(--fondo);
   background-color: var(--cocacola);
+}
+#aheader{
+  color: var(--fondo);
 }
 body{
   margin: auto;
   font-family: 'Montserrat', sans-serif;
   justify-content: center;
   color: var(--texto);
+  background: #F40009;
+background: linear-gradient(0deg,rgba(244, 0, 9, 1) 0%, rgba(35, 1, 1, 1) 100%);
 }
 ul li{
   background-color: var(--fondo);
@@ -68,8 +76,9 @@ ul li{
   font-style: normal;
   list-style-type: none;
   text-align: center;
-  font-size: 30px;
+  font-size: 35px;
   padding: 5px;
+  /* box-sizing: border-box (); */
 }
 #sectionDia{
   background-color: var(--cocacola);
@@ -82,27 +91,39 @@ ul li{
 }
 #sectionSpecial{
   background-color: var(--verde);
+  color: var(--verdeoscuro);
   text-align: center;
   font-size: 15px;
-  font-weight: 200;
+  font-weight: 550;
   padding: 5px 0;
   margin: 5px 0;
 }
 footer{
   background-color: var(--verde);
   text-align: center;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 900;
-  padding: 5px 0;
+  padding: 15px 0;
   margin: 5px 0;
 }
 #entradas{
-  font-size: 25px;
-  font-weight: 400;
+  font-size: 13px;
+  font-weight: 200;
+  padding: 5px;
+  color: var(--verdeoscuro);
+  margin: 0 0 10px 0;
+}
+footer h4{
+  color: var(--azulon);
 }
 p{
   font-weight: 200;
   font-size: 13px;
+  margin: 10px 0 0 0;
+  color: var(--verdeoscuro);
+}
+#ap{
+  color: var(--verdeoscuro);
 }
     </style>         
 
@@ -115,7 +136,7 @@ p{
         <h3 id="h3Header">Presentado por Tony Aguilar</h3>
         <h3 id="h3Header">
           Recinto
-          <a href="https://maps.app.goo.gl/t5QpTmqmTDep7Brk8"
+          <a id="aheader" href="https://maps.app.goo.gl/t5QpTmqmTDep7Brk8"
             > Caja Mágica · Madrid</a
           >
         </h3>
@@ -124,28 +145,44 @@ p{
         <section id="sectionDiasCantantes">
           <h3 id="sectionDia">01 SEPTIEMBRE</h3>
           <ul id="listaCantantes">
-            <li>Quevedo · Ava Max</li>
-            <li>Maria Becerra · Trueno</li>
-            <li>Nil Moliner ·Ofenbach</li>
-            <li>Mae Muller · Leo Rizzi</li>
-            <li>Angel22 · Luc Loren</li>
-            <li>Paula Koops · Fusa Nocta</li>
-            <li>Charlie Usg · Ters · Noan</li>
+            <li>Quevedo</li>
+          <li>Ava Max</li>
+          <li>Maria Becerra</li>
+          <li>Trueno</li>
+          <li>Nil Moliner</li>
+          <li>Ofenbach</li>
+          <li>Mae Muller</li>
+          <li>Leo Rizzi</li>
+          <li>Angel22</li>
+          <li>Luc Loren</li> 
+          <li>Paula Koops</li>
+          <li>Fusa Nocta</li>
+          <li>Charlie Usg</li>
+          <li>Ters</li>
+          <li>Noan</li>
           </ul>
         </section>
         <section>
           <h3 id="sectionDia">02 SEPTIEMBRE</h3>
           <h4 id="sectionSpecial">Special Ghest</h4>
           <ul id="listaCantantes">
-            <li>Ozuna · Estopa</li>
-            <li>Yungblund · Lali</li>
-            <li>Saiko · Villano Antillano</li>
-            <li>Maikel Delacalle</li>
-            <li>La La Love You</li>
-            <li>Cat Burns · Vicco</li>
-            <li>Dylan · Juacko</li>
-            <li>Meler · Carla Frigo · Megara</li>
-            <li>Loco Escrito · Hologramma</li>
+            <li>Ozuna</li>
+          <li>Estopa</li>
+          <li>Yungblund</li>
+          <li>Lali</li>
+          <li>Saiko</li>
+          <li>Villano Antillano</li>
+          <li>Maikel Delacalle</li>
+          <li>La La Love You</li>
+          <li>Cat Burns</li>
+          <li>Vicco</li> 
+          <li>Dylan</li>
+          <li>Juacko</li>
+          <li>Meler</li>
+          <li>Carla Frigo</li>
+          <li>Megara</li>
+          <li>Loco Escrito</li>
+          <li>Hologramma</li>
           </ul>
         </section>
       </main>
@@ -155,7 +192,7 @@ p{
         <h4>ENTRADA DE DÍA: 35€ + G.G</h4>
         <p>
           Compra ahora en
-          <a
+          <a id="ap"
             href="http://www.fanfestiventos.com/coca-cola-music-experience-2023-cartel-completo-entradas-sold-out-y-emocion-desbordante"
             >www.fanfesteventos</a
           >
